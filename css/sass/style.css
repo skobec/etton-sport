@@ -76,31 +76,25 @@ h1 {
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/GothamProBlack.eot") format("eot"), url("../fonts/GothamProBlack.ttf") format("truetype"), url("../fonts/GothamProBlack.woff") format("woff"); }
-
 @font-face {
   font-family: 'Gotham Pro';
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/GothamProLight.eot") format("eot"), url("../fonts/GothamProLight.ttf") format("truetype"), url("../fonts/GothamProLight.woff") format("woff"); }
-
 @font-face {
   font-family: 'Gotham Pro';
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/GothamProMedium.eot") format("eot"), url("../fonts/GothamProMedium.ttf") format("truetype"), url("../fonts/GothamProMedium.woff") format("woff"); }
-
 @font-face {
   font-family: 'Akzidenz Grotesk Pro';
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/AkzidenzGroteskPro-Md.otf") format("opentype"); }
-
 @font-face {
   font-family: 'DinproBlack';
   font-style: normal;
-  src: url('../fonts/DINPro-Black_13933.ttf') format('truetype');
-}
-
+  src: url("../fonts/DINPro-Black_13933.ttf") format("truetype"); }
 @keyframes scroll-arrow {
   0%, 50% {
     transform: translate3d(0, 0, 0); }
@@ -108,7 +102,6 @@ h1 {
     transform: translate3d(10px, 0, 0); }
   100% {
     transform: translate3d(0, 0, 0); } }
-
 .header-logo {
   cursor: pointer;
   transition: all .25s ease-in-out;
@@ -293,6 +286,10 @@ main {
       font-size: 18px; }
       .slide .about p + p {
         margin-top: 8px; }
+  .slide .img h1 {
+    font-family: "DinproBlack" !important;
+    color: #124295 !important;
+    font-size: 20px; }
 
 .slide-title {
   font-size: 75px;
@@ -360,7 +357,8 @@ main {
   .page-menu a {
     padding: 0 8px;
     color: rgba(255, 255, 255, 0.5);
-    position: relative; }
+    position: relative;
+    text-shadow: 2px 2px 0px rgba(46, 46, 46, 0.81); }
     .page-menu a::after {
       content: '';
       display: block;
@@ -410,6 +408,18 @@ body.mobile .cross:hover {
   display: inline-block;
   vertical-align: middle;
   margin-left: 341px; }
+  .projects-list-fisu {
+    margin-left: 0 !important; }
+    .projects-list-fisu .project-item {
+      height: 515px;
+      width: 830px; }
+      .projects-list-fisu .project-item img {
+        width: 100%; }
+
+.slide-fisu {
+  overflow: hidden; }
+  .slide-fisu * {
+    white-space: nowrap; }
 
 .slide--projects {
   margin-right: 30vw; }
@@ -793,76 +803,104 @@ footer {
 @media (max-width: 1400px), (max-height: 768px) {
   .slide .about {
     width: 80%; }
+
   .slide .about p {
     width: 100%; }
+
   h1 {
     font-size: 48px; }
+
   .slide .about p {
     font-size: 16px; }
+
   .page-menu li {
     margin-right: 20px; }
+
   .slide-title {
     font-size: 55px; }
+
   .container {
     padding: 0 100px; }
+
   header .container {
     height: 120px;
     padding: 31px 49px 31px 49px; }
+
   .slide-description--figures {
     width: 65%; }
+
   .slide-description {
     font-size: 24px; }
+
   .project-intro {
     font-size: 42px;
     line-height: 1.30952em;
     width: 100%; }
+
   .project-item {
     width: 540px;
     height: 320px; }
+
   .page-menu a::after {
     margin-top: 0; }
+
   .cross {
     right: 49px; }
+
   .case-popup--text {
     width: 100%; }
     .case-popup--text:after {
       content: '\007C\00a0\00a0';
       display: block;
       color: transparent; }
+
   .case-popup--whatwedid {
     width: 100%; }
+
   .case-popup--heading {
     width: 100%;
     font-size: 42px; }
+
   .case-popup .container {
     padding: 120px 210px 0; }
+
   footer .container {
     padding: 0 49px; }
+
   .slide-column {
     padding-right: 8%; }
+
   .slide-title--contacts {
     width: 100%; }
+
   .contacts-list {
     width: 380px; }
+
   .form-list {
     width: 320px; }
+
   .form-list textarea {
     height: 60px; }
+
   .slide--projects {
     margin-right: 20vw; }
+
   .scroll {
     right: 49px; } }
-
 @media (max-width: 1100px), (max-height: 660px) {
   .slide .about {
     width: 90%; }
+
   .slide .about h1 + p {
     margin-top: 25px; }
+
   h1 {
     font-size: 40px; }
+
   .burger-menu-button {
     display: block;
     pointer-events: all; }
+
   .page-menu {
     position: fixed;
     top: 0;
@@ -888,6 +926,7 @@ footer {
       box-sizing: border-box;
       padding: 100px 40px;
       text-align: center; }
+
   .page-menu li {
     width: 100%;
     margin-right: 0;
@@ -895,197 +934,269 @@ footer {
     font-size: 12px; }
     .page-menu li:last-child {
       margin-bottom: 0; }
+
   .slide .about p {
     font-size: 14px; }
+
   .slide-title {
     width: 80%;
     font-size: 40px; }
+
   .slide-description {
     font-size: 20px; }
+
   .project-intro {
     font-size: 34px;
     transform: translate(-25px, 0) scale3d(1, 1, 1); }
+
   .project-item {
     width: 480px;
     height: 280px; }
+
   .project-intro--active {
     transform: translate(-45px, 0) scale3d(1, 1, 1); }
+
   .slide-title--projects {
     width: auto !important; }
+
   main {
     padding-top: 110px; }
+
   .slide-description {
     justify-content: space-between; }
+
   .slide-column {
     padding-right: 0;
     width: 46%; }
+
   .contacts {
     justify-content: space-between; }
+
   .contacts-list {
     padding-right: 0;
     width: 46%; }
+
   .form-list {
     width: 46%; }
+
   .form-list input + input, .form-list input + textarea {
     margin-top: 30px; }
+
   .form-list textarea {
     height: 30px; }
+
   .burger-menu-button {
     font-size: 36px; }
+
   footer.invisible a {
     opacity: 0;
     pointer-events: none; }
+
   .case-popup .container {
     padding: 110px 180px 0; } }
-
 @media (min-width: 1101px) {
   .page-menu {
     display: block !important; } }
-
 @media (max-width: 800px), (max-height: 660px) {
   .slide-title {
     width: 80%;
     font-size: 32px; }
+
   .container {
     padding: 0 49px; }
+
   .slide .about {
     width: 84%; }
+
   footer {
     display: none; }
+
   main {
     padding-bottom: 0;
     padding-top: 85px; }
+
   .header-logo {
     height: auto;
     width: 70px; }
+
   header .container {
     padding: 22px 49px 22px 49px;
     height: 85px; }
+
   section .container {
     padding-bottom: 40px; }
+
   h1 {
     font-size: 30px; }
+
   .page-menu ul {
     padding: 50px 30px; }
+
   .slide-description li {
     margin: 20px 0; }
+
   .slide-description {
     font-size: 18px; }
+
   .project-item {
     width: 320px;
     height: 210px; }
+
   .project-intro {
     font-size: 24px; }
+
   .slide-title + .projects-list {
     margin-left: 220px; }
+
   .project-item + .project-item {
     margin-left: 140px; }
+
   .scroll {
     top: 47px;
     right: 110px;
     z-index: 100; }
+
   .slide .about {
     width: 100%; }
+
   .case-popup--nav li {
     font-size: 0;
     transform: translate3d(0, 0, 0) !important; }
+
   .case-popup--heading {
     font-size: 24px; }
+
   .case-popup .container {
     padding: 90px 70px 0; }
+
   .case-popup--nav {
     padding: 0 23px; }
+
   .case-popup--text:before {
     display: none; }
+
   .case-popup--images img {
     margin-top: 25px; }
+
   .slide-title--contacts {
     width: 100% !important; } }
-
 @media (max-width: 600px) {
   header .container {
     padding: 20px 30px; }
+
   .burger-menu-button {
     right: 30px; }
+
   .scroll {
     top: 47px;
     right: 80px; }
+
   .container {
     padding: 0 40px; }
+
   h1 {
     font-size: 24px; }
+
   .slide-title {
     font-size: 20px; }
+
   .slide-description--figures {
     width: 90%; }
+
   .project-item {
     width: 280px;
     height: 170px; }
+
   .project-intro {
     font-size: 20px;
     transform: translate(0px, 0) scale3d(1, 1, 1); }
+
   .project-intro--active {
     transform: translate(-15px, 0) scale3d(1, 1, 1); }
+
   .case-popup--nav {
     bottom: auto;
     top: 34px;
     padding: 0 85px 0 130px;
     z-index: 110; }
+
   .case-popup .container {
     padding-left: 40px;
     padding-right: 40px; }
+
   .case-popup--heading {
     font-size: 20px; }
+
   header {
     pointer-events: none; }
     header .wrapper {
       pointer-events: none; }
     header .burger-menu-button, header .header-logo {
       pointer-events: all; }
+
   .cross {
     right: 30px; }
+
   .project-item + .project-item {
     margin-left: 90px; }
+
   .slide--projects {
     margin-right: 20vw; }
+
   .slide-column {
     width: 100%; }
+
   .slide-description {
     flex-wrap: wrap;
     font-size: 16px; }
+
   .slide-column + .slide-column {
     margin-top: -20px; }
+
   .contacts {
     flex-wrap: wrap; }
+
   .contacts-list {
     width: 100%; }
+
   .form-list {
     width: 100%;
     margin-top: 40px; }
+
   .form-list .success-message {
     font-size: 14px; } }
-
 @media (max-width: 400px) {
   .slide-title + .projects-list {
     margin-left: 120px; }
+
   .project-item {
     width: 230px; }
+
   .page-menu li {
     font-size: 10px; }
+
   h1 {
     font-size: 22px; }
+
   .slide-title {
     font-size: 18px; }
+
   .case-popup--heading {
     font-size: 18px; }
+
   .project-item {
     width: 210px; }
+
   .project-intro {
     font-size: 18px; }
+
   .case-popup--nav li:last-child:after {
     margin-left: 0; }
+
   .case-popup--nav li:first-child:before {
     margin-right: 0; }
+
   .page-menu a {
     display: inline-block; } }
 
+/*# sourceMappingURL=style.css.map */
