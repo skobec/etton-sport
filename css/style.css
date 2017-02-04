@@ -95,6 +95,12 @@ h1 {
   font-weight: 500;
   src: url("../fonts/AkzidenzGroteskPro-Md.otf") format("opentype"); }
 
+@font-face {
+  font-family: 'DinproBlack';
+  font-style: normal;
+  src: url('../fonts/DINPro-Black_13933.ttf') format('truetype');
+}
+
 @keyframes scroll-arrow {
   0%, 50% {
     transform: translate3d(0, 0, 0); }
@@ -1082,3 +1088,4 @@ footer {
     margin-right: 0; }
   .page-menu a {
     display: inline-block; } }
+
